@@ -11,12 +11,13 @@
     New Staff
   </button>
 </div>
-<table class="table table-hover table-bordered table-striped">
+<table class="tablecenterCSS table table-hover table-bordered table-striped">
   <thead>
     <th>ID</th>
     <th>First Name</th>
     <th>Last Name</th>
     <th>Age</th>
+    <th>Update / Delete</th>
   </thead>
   <tbody>
     <?php 
@@ -28,11 +29,17 @@
                     } else {
                         while($row = mysqli_fetch_assoc($result)){
                             ?>
-    <tr>
-      <td><?php echo $row['id']?></td>
-      <td><?php echo $row['first_name']?></td>
-      <td><?php echo $row['last_name']?></td>
-      <td><?php echo $row['age']?></td>
+    <tr class="flex justify-content-center">
+      <td class="flex justify-content-center align-middle"><?php echo $row['id']?></td>
+      <td class="align-middle"><?php echo $row['first_name']?></td>
+      <td class="align-middle"><?php echo $row['last_name']?></td>
+      <td class="align-middle"><?php echo $row['age']?></td>
+      <td class="align-middle">
+        <a href="update_page.php?id=<?php echo $row['id']?>" class="btn btn-success">Update</a>
+        <br/>
+        <br/>
+        <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete</a>
+      </td>
     </tr>
     <?php
                         }

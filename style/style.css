@@ -26,3 +26,11 @@ h6{
     border-radius: 12px;
     text-align: center;
 }
+
+.tablecenterCSS td{
+	text-align:center;
+}
+
+.tablecenterCSS th{
+	text-align:center;
+}
