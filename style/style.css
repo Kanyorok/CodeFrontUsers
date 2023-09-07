@@ -6,3 +6,23 @@
     letter-spacing: 4px;
     font-weight: 700;
 }
+
+.box1 {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+.container {
+    margin-top: 45px;
+}
+
+h6{
+    color: red;
+    font-weight: 700;
+    font-size: large;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
