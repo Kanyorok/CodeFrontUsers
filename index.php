@@ -8,7 +8,7 @@
     data-bs-toggle="modal" 
     data-bs-target="#exampleModal"
   >
-    Add New Developer
+    New Staff
   </button>
 </div>
 <table class="table table-hover table-bordered table-striped">
@@ -40,8 +40,14 @@
                 ?>
   </tbody>
 </table>
+
+<?php
+    if(isset($_GET['message'])){
+        echo "<h6>".$_GET['message']."</h6>";
+    }
+?>
 <!-- Modal -->
-<form action="">
+<form action="insert_data.php" method="post">
     <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -72,7 +78,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-success">SAVE DEVELOPER</button>
+            <input type="submit" class="btn btn-success" name="add_developer" value="ADD DEVELOPER">
         </div>
         </div>
     </div>
