@@ -6,3 +6,13 @@
     letter-spacing: 4px;
     font-weight: 700;
 }
+
+.box1 {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+.container {
+    margin-top: 45px;
+}
