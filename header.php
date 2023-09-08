@@ -11,6 +11,6 @@
 </head>
 
 <body>
-    <h1 id="main_title">CODEFRONT DEVELOPER MANAGEMENT</h1>
+    <h1 id="main_title"><a href="index.php">CODEFRONT DEVELOPER MANAGEMENT</a></h1>
     <div class="container">
         

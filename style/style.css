@@ -7,6 +7,11 @@
     font-weight: 700;
 }
 
+#main_title a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .box1 {
    display: flex;
    justify-content: space-between;

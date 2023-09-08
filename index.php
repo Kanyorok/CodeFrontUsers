@@ -21,14 +21,14 @@
   </thead>
   <tbody>
     <?php 
-                    $query = "SELECT * FROM `users`";
-                    $result = mysqli_query($connection, $query);
+        $query = "SELECT * FROM `users`";
+        $result = mysqli_query($connection, $query);
 
-                    if(!$result){
-                        die('Query failed'.mysqli_error());
-                    } else {
-                        while($row = mysqli_fetch_assoc($result)){
-                            ?>
+        if(!$result){
+        die('Query failed'.mysqli_error());
+        } else {
+        while($row = mysqli_fetch_assoc($result)){
+    ?>
     <tr class="flex justify-content-center">
       <td class="flex justify-content-center align-middle"><?php echo $row['id']?></td>
       <td class="align-middle"><?php echo $row['first_name']?></td>
@@ -56,6 +56,11 @@
 <?php
     if(isset($_GET['insert_message'])){
         echo "<h6>".$_GET['insert_message']."</h6>";
+    }
+?>
+<?php
+    if(isset($_GET['update_message'])){
+        echo "<h6>".$_GET['update_message']."</h6>";
     }
 ?>
 <!-- Modal -->
