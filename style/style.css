@@ -1,0 +1,41 @@
+#main_title {
+    text-align: center;
+    background-color: #333;
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+#main_title a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.box1 {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+.container {
+    margin-top: 45px;
+}
+
+h6{
+    color: red;
+    font-weight: 700;
+    font-size: large;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tablecenterCSS td{
+	text-align:center;
+}
+
+.tablecenterCSS th{
+	text-align:center;
+}
